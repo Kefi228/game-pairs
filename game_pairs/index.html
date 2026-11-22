@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найди пару</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game">
+        
+        <header class="top">
+
+            <div>
+                <p class="eyebrow">
+                    Игра на внимание и логику
+                </p>
+
+                <h1>Найди пару</h1>
+
+                <p class="subtitle">
+                    Выбери две картинки,
+                    которые подходят друг к другу по смыслу.
+                </p>
+            </div>
+
+            
+            <button class="restart" id="restart">
+                Начать заново
+            </button>
+
+        </header>
+
+        <section class="status">
+
+            <div class="stat">
+                <span class="stat-label">
+                    Найдено пар
+                </span>
+
+                <strong id="pairs">0 / 5</strong>
+            </div>
+
+            <div class="stat">
+                <span class="stat-label">
+                    Попытки
+                </span>
+
+                <strong id="moves">0</strong>
+            </div>
+
+            <p id="message">
+                Нажми на первую картинку.
+            </p>
+
+        </section>
+        
+        <section
+            id="board"
+            class="board"
+            aria-label="Карточка игры">
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
